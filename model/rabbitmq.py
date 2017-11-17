@@ -1,7 +1,9 @@
 #!/usr/bin/env python
-import os
-import pika
-import time
+import pika, time
+import sys, os, inspect
+pathapp = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+sys.path.append(pathapp + "/config")
+
 import Environment as env
 
 class RabbitMQ(object):

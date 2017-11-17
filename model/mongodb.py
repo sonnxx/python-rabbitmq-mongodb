@@ -1,5 +1,7 @@
 from pymongo import MongoClient
 from bson import ObjectId
+pathapp = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+sys.path.append(pathapp + "/config")
 import Environment as env
 
 class MongoDb(object):

@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import base64, json, time, datetime, pika
+import Constant as cons
+import sys, os, inspect
+pathapp = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+sys.path.append(pathapp + "/config")
+sys.path.append(pathapp + "/model")
+
 import Environment as env
 import rabbitmq as rabbit
-import Constant as cons
 import mongodb as mongo
 
 
