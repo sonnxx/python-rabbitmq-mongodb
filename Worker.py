@@ -35,6 +35,7 @@ class Worker(object):
 		print "[*] Waiting for messages. To exit press CTRL+C"
 
 		self.channel.basic_qos(prefetch_count = 1)
+		# Callback method action queue
 		self.channel.basic_consume(actionqueue, queue = cons.key_queue_send)
 		self.channel.start_consuming()
 
