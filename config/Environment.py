@@ -6,6 +6,6 @@ RABBIT_PASS = 'guest'
 RABBIT_VHOST = '/'
 
 # Conffig mongodb 
-MONGO_HOST = '172.18.0.3'
+MONGO_HOST = '127.0.0.1'
 MONGO_PORT = '27017'
 MONGO_DB   = 'db_sample'
