@@ -9,8 +9,7 @@
 
 - Install Extensions
 ```sh
-$ sudo pip install pymongo
-$ sudo pip install pika
+$ pip install -r requirements.txt
 ```
 
 ### Config environment
